@@ -47,8 +47,25 @@ For normal-priority tasks, the scheduler uses the following formula:
 
 ```text
 score = power / (1 + load)
+```
 
 ### Urgent Tasks
 
 ```text
 urgent_score = power × 2
+```
+
+## Interface
+
+The application includes a Java Swing interface for managing servers, tasks, and scheduling results.
+
+The interface is divided into three main sections:
+
+- **Servers**: displays server power, load, normal score, and urgent score.
+- **Tasks**: displays task size and priority.
+- **Decisions**: shows the selected server for each task after running the simulation.
+
+It also includes summary cards for total tasks, normal tasks, urgent tasks, and average execution time.
+
+![Java Distributed Task Scheduler Interface](<img width="959" height="499" alt="scheduler" src="https://github.com/user-attachments/assets/169a90b6-d27a-48b1-acc1-51f6937efef4" />
+)
